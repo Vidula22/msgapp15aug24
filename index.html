@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<titile>Motivational Msg App By Kamal Sir</title>
+		<style>
+			*{font-size:50px;}
+			body{background-color:lightblue;}
+		</style>
+	</head>
+	<body>
+	<center>
+		<h1>Motivational Msg</h1>
+		<form onsubmit="show()">
+			<input type="submit"	value="Get Msg"/>
+		</form>
+			<h2 id="msg"/>
+		
+		<script>
+			function show()
+			{
+				event.preventDefault();
+				let msg = document.getElementById("msg");
+		
+				let data = ["be a warrier","trust the process","u cab dot it","just do it","all the best"];
+				let r = parseInt(Math.random()*data.length);
+				msg.innerHTML = data[r];
+			}
+		</script>
+	</center>
+	</body>
+</html>
